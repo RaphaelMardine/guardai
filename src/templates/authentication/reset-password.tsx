@@ -10,17 +10,16 @@ export const PasswordReset = () => {
     >
       <View style={tailwind`px-4 w-full max-w-sm`}>
         <Text style={tailwind`text-5xl font-bold mb-6 text-gray-50`}>
-          Reset Your Password
+          Altere sua senha
         </Text>
 
         <Text style={tailwind`text-gray-50 mb-8 text-base`}>
-          Forgotten your account password? Enter your email address below and
-          you'll recieve a link to create a new one.
+          Esqueceu sua senha? Insira seu endereço de e-mail abaixo e você receberá um link para criar uma nova senha.
         </Text>
 
-        <TextInput style={tailwind`mb-4`} placeholder="Enter email address" />
+        <TextInput style={tailwind`mb-4`} placeholder="Insira seu endereço de e-mail." />
 
-        <Button text="Reset Password" variant="success" />
+        <Button text="Alterar senha" variant="success" />
       </View>
     </View>
   );

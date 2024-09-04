@@ -2,6 +2,7 @@ import { View, Text, Pressable } from "react-native";
 import tailwind from "twrnc";
 import { TextInput } from "@/components/text-input";
 import { Button } from "@/components/button";
+import { Link } from "expo-router";
 
 export const Login = () => {
   return (
@@ -14,8 +15,8 @@ export const Login = () => {
         </Text>
 
         <View style={tailwind`flex flex-col gap-4`}>
-          <TextInput placeholder="Enter email address" />
-          <TextInput placeholder="Enter password" />
+          <TextInput placeholder="Insira o endereço de e-mail" />
+          <TextInput placeholder="Insira a senha" />
         </View>
 
         <View style={tailwind`flex flex-row justify-between items-center my-8`}>
@@ -23,14 +24,33 @@ export const Login = () => {
             <Pressable
               style={tailwind`bg-gray-50 h-6 w-6 rounded-sm mr-2`}
             ></Pressable>
-            <Text style={tailwind`text-gray-50`}>Remember me</Text>
+            <Text style={tailwind`text-gray-50`}>Lembrar senha</Text>
           </View>
           <Pressable>
-            <Text style={tailwind`text-gray-50 font-bold`}>Reset password</Text>
+            <Link
+              href={`/templates/authentication/reset-password`}
+              style={tailwind`text-gray-50 font-bold`}
+            >
+              Esqueci minha senha
+            </Link>
           </Pressable>
         </View>
 
-        <Button text="Login" variant="success" />
+        <View style={tailwind`flex flex-col gap-4`}>
+          <Link href={`/templates/authentication/user-profile`} style={tailwind`w-full`}>
+            <Button text="Login" variant="success" style={tailwind`w-full`} />
+          </Link>{" "}
+          <Link
+            href={`/templates/authentication/signup`}
+            style={tailwind`w-full`}
+          >
+            <Button
+              text="Cadastro"
+              variant="default"
+              style={tailwind`w-full`}
+            />
+          </Link>
+        </View>
       </View>
     </View>
   );

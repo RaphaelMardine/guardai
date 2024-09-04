@@ -11,19 +11,19 @@ export const UserProfile = () => {
         <Avatar source={{ uri: "https://source.unsplash.com/random" }} />
         <View style={tailwind`gap-2 items-center`}>
           <Text style={tailwind`text-gray-50 text-3xl font-bold`}>
-            Joe Bloggs
+            John Doe
           </Text>
-          <Text style={tailwind`text-gray-50 text-lg`}>joe@bloggs.com</Text>
+          <Text style={tailwind`text-gray-50 text-lg`}>johndoe@ambizzion.com</Text>
         </View>
       </View>
       <View style={tailwind`flex-1 justify-center gap-8`}>
         <Pressable style={tailwind`flex-row items-center gap-2 px-8`}>
           <Ionicons name="settings-outline" size={24} color="#fff" />
-          <Text style={tailwind`text-gray-50 text-lg`}>Settings</Text>
+          <Text style={tailwind`text-gray-50 text-lg`}>Configurações</Text>
         </Pressable>
         <Pressable style={tailwind`flex-row items-center gap-2 px-8`}>
           <Ionicons name="help-buoy-outline" size={24} color="#fff" />
-          <Text style={tailwind`text-gray-50 text-lg`}>Help</Text>
+          <Text style={tailwind`text-gray-50 text-lg`}>Ajuda</Text>
         </Pressable>
         <Pressable style={tailwind`flex-row items-center gap-2 px-8`}>
           <MaterialIcons name="logout" size={24} color="#fff" />

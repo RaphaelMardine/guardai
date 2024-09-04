@@ -23,29 +23,29 @@ export const Signup = () => {
       ) : null}
       <View style={tailwind`px-8 w-full max-w-sm`}>
         <Text style={tailwind`text-5xl font-bold mb-6 text-gray-50`}>
-          Sign up
+          Cadastro
         </Text>
 
         <View style={tailwind`flex flex-col gap-4`}>
           <TextInput
-            placeholder="Enter email address"
+            placeholder="Insira seu endereço de e-mail"
             autoCapitalize="none"
             keyboardType="email-address"
           />
 
           <TextInput
-            placeholder="Confirm email address"
+            placeholder="Confirme seu endereço de e-mail"
             autoCapitalize="none"
             keyboardType="email-address"
           />
 
           <TextInput
-            placeholder="Enter password"
+            placeholder="Insira sua senha"
             secureTextEntry={!showPassword}
           />
 
           <TextInput
-            placeholder="Confirm password"
+            placeholder="Confirme sua senha"
             secureTextEntry={!showPassword}
           />
         </View>
@@ -57,12 +57,11 @@ export const Signup = () => {
             <View style={tailwind`bg-green-400 h-4 w-4 rounded-sm`} />
           </Pressable>
           <Text style={tailwind`text-gray-50`}>
-            I've read and agree to the terms and conditions and the privacy
-            policy
+          Li e concordo com os termos e condições de política e privacidade.
           </Text>
         </View>
 
-        <Button text="Sign up" variant="success" />
+        <Button text="Cadastrar" variant="success" />
       </View>
     </View>
   );
