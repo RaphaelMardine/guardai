@@ -1,13 +1,6 @@
-import {
-  ActivityIndicator,
-  FlatList,
-  Text,
-  TouchableOpacity,
-  View,
-} from "react-native";
-import tailwind from "twrnc";
-import { Link } from "expo-router";
 import { Login } from "@/templates/login";
+import { View } from "react-native";
+import tailwind from "twrnc";
 
 export default function Page() {
   return (

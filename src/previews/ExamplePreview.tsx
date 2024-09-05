@@ -58,10 +58,10 @@ import { WithLabelSwitchExample } from "@/examples/components/switch/with-label"
 import { TextAreaExample } from "@/examples/components/text-area/default";
 
 import { DefaultTextInputExample } from "@/examples/components/text-input/default";
-import { Login } from "@/templates/authentication/login";
-import { Signup } from "@/templates/authentication/signup";
-import { PasswordReset } from "@/templates/authentication/reset-password";
-import { UserProfile } from "@/templates/authentication/user-profile";
+import { Login } from "@/templates/login";
+import { Signup } from "@/templates/signup";
+import { PasswordReset } from "@/templates/reset-password";
+import { UserProfile } from "@/templates/user-profile";
 import { DefaultRefresh } from "@/examples/components/refresh/default";
 import { ButtonRefresh } from "@/examples/components/refresh/button";
 import { LoadingRefresh } from "@/examples/components/refresh/loading";

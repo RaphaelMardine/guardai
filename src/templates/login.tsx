@@ -3,9 +3,7 @@ import { View, Text, Alert, Pressable  } from "react-native";
 import tailwind from "twrnc";
 import * as Google from "expo-auth-session/providers/google";
 import * as WebBrowser from "expo-web-browser";
-import { TextInput } from "@/components/text-input";
 import { Button } from "@/components/button";
-import { Link } from "expo-router";
 import { makeRedirectUri } from "expo-auth-session";
 
 WebBrowser.maybeCompleteAuthSession();
@@ -35,6 +33,7 @@ export const Login = () => {
       <View style={tailwind`px-4 w-full max-w-sm`}>
         <Text style={tailwind`text-5xl font-bold mb-6 text-gray-50`}>
           Entre na sua conta :)
+          {JSON.stringify(redirectUri)}
         </Text>
 
         {/* <View style={tailwind`flex flex-col gap-4`}>
