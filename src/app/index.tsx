@@ -7,7 +7,7 @@ import {
 } from "react-native";
 import tailwind from "twrnc";
 import { Link } from "expo-router";
-import { Login } from "@/templates/authentication/login";
+import { Login } from "@/templates/login";
 
 export default function Page() {
   return (
